@@ -43,9 +43,14 @@
         ctx.moveTo(i,0);
         ctx.lineTo(i,canvas.height);
         ctx.fillText(i/escala,i+2,495);
-       
     }
-        
+        for(let j=0;j<canvas.height;j+=escala){
+        ctx.moveTo(0,j);
+        ctx.lineTo(canvas.width,j);
+        ctx.fillText(j/escala,2,j);
+
+
+        }
     }
 
 
