@@ -33,6 +33,12 @@
 <script>
     let canvas = document.getElementById("canvas");
     let ctx = canvas.getContext;
+    let escala = 20;
+
+    function dibujarEscala(){
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+    }
+
 
     function plot(x,y){
         ctx.fillRect(x*20,y*20,20,20);
@@ -50,6 +56,8 @@
     function bresenham (x0,y0,x1,y1){
         let dx = x1-x0;
         let dy = y1-y0;
+
+        let sx=(x0)
 
     }
 </script>
