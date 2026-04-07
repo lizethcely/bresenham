@@ -74,6 +74,8 @@
     }
 
     function dibujarLinea(){
+
+        dibujarEscala();
         let x0 = parseInt(document.getElementById("x0").value);
         let x1 = parseInt(document.getElementById("x1").value);
         let y0 = parseInt(document.getElementById("y0").value);
@@ -81,6 +83,7 @@
         
         bresenham(x0,y0,x1,y1);
     }
+    
 
     function bresenham (x0,y0,x1,y1){
         let dx = Math.abs(x1-x0);
@@ -94,9 +97,8 @@
         let paso = 0;
         let tabla = document.querySelector("#tabla tbody");
         tabla.innerHTML = "";
-    }
 
-    while(true){
+         while(true){
         plot(x0,y0);
 
         tabla.innerHTML += `
@@ -122,6 +124,8 @@
         }
         paso ++;
     }
+    }
+
 
     dibujarEscala();
 </script>
