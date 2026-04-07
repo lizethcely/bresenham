@@ -35,8 +35,7 @@
     let ctx = canvas.getContext;
 
     function plot(x,y){
-        ctx.fillRect(x,y,20,20);
-        plot(5,5);
+        ctx.fillRect(x*20,y*20,20,20);
     }
 
     function dibujarLinea(){
@@ -45,6 +44,7 @@
         let y0 = parseInt(document.getElementById("y0").value);
         let y1 = parseInt(document.getElementById("y1").value);
         
+        console.log(x0,y0,x1,y1);
     }
 </script>
 </body>
