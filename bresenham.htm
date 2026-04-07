@@ -53,7 +53,6 @@
         ctx.stroke();
     }
 
-
     function plot(x,y){
         ctx.fillRect(x*escala,y*escala,escala,escala);
     }
@@ -68,10 +67,10 @@
     }
 
     function bresenham (x0,y0,x1,y1){
-        let dx = x1-x0;
-        let dy = y1-y0;
+        let dx = Math.abs(x1-x0);
+        let dy = Math.abs(y1-y0);
 
-        let sx=(x0)
+       
 
     }
 </script>
