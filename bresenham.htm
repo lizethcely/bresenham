@@ -40,7 +40,9 @@
         ctx.beginPath();
 
         for(let i=0;i<canvas.width;i+=escala){
-        
+        ctx.moveTo(i,0);
+        ctx.lineTo(i,canvas.height);
+       
     }
         
     }
