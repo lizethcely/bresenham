@@ -82,6 +82,16 @@
 
     while(true){
         plot(x0,y0);
+
+        tabla.innerHTML += `
+        <tr>
+        <td>${paso}</td>
+        <td>${x0}</td>
+        <td>${y0}</td>
+        <td>${err}</td>
+        </tr>
+        `;
+        
     }
 </script>
 </body>
